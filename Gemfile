@@ -27,8 +27,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'pry',        group: :development
 
-gem 'slugged', '~> 2.0'
-
 gem 'postgres-copy'
 
 # Use ActiveModel has_secure_password

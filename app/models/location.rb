@@ -8,4 +8,8 @@ class Location < ActiveRecord::Base
   validates :longitude, presence: true
   validates :timezone, presence: true
   validates :dst, presence: true
+
+  def to_param
+    "#{zip}"
+  end
 end
