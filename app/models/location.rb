@@ -1,5 +1,6 @@
 class Location < ActiveRecord::Base
   acts_as_copy_target
+  reverse_geocoded_by :latitude, :longitude
 
   validates :zip, presence: true
   validates :city, presence: true
