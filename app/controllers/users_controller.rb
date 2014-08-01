@@ -7,7 +7,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
     auth_key = Digest::MD5.hexdigest(params[:user][:name])
 
     @user = User.create(name: params[:user][:name], authentification_key: auth_key)
