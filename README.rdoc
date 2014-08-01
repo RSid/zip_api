@@ -1,28 +1,9 @@
-== README
+Exposes JSON address information in API via search by zipcode in this format:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+http://localhost:3000/locations/[zipcode]
 
-Things you may want to cover:
+and search by longitude and latitude for authenticated users only in this format:
 
-* Ruby version
+http://localhost:3000/locations?longitude=[longitude&latitude=[latitude]&number=[desired number of results]&authentication_key=[authentication token]
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Users can request authentication keys via the users/new page.
