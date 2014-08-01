@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+  root to: "users#new"
+
   resources :locations, only: [:show, :index]
 
-  resources :user, only: [:create, :new]
+  resources :users, only: [:create, :new]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
