@@ -1,6 +1,6 @@
 class Location < ActiveRecord::Base
   acts_as_copy_target
-  
+
   validates :zip, presence: true
   validates :city, presence: true
   validates :state, presence: true
